@@ -1,0 +1,430 @@
+[gd_scene load_steps=26 format=3 uid="uid://84l4spgcfnu4"]
+
+[ext_resource type="Script" path="res://Scripts/shape_display.gd" id="1_f37k3"]
+[ext_resource type="Texture2D" uid="uid://djaqkeofspu1t" path="res://Assets/SequenceShapes/BlueSquare.png" id="1_xp77y"]
+[ext_resource type="Texture2D" uid="uid://caq0s8mllkg6" path="res://Assets/SequenceShapes/RedCircle.png" id="2_xwkol"]
+[ext_resource type="Texture2D" uid="uid://c3tuyiqpg8fsy" path="res://Assets/SequenceShapes/YellowTriangle.png" id="3_4tn0a"]
+[ext_resource type="Texture2D" uid="uid://fxi0qwf7aa63" path="res://Assets/SequenceShapes/GreenRhombus.png" id="4_u2ga2"]
+[ext_resource type="Texture2D" uid="uid://bh2oo0sip7xnr" path="res://Assets/SequenceShapes/OrangePentagon.png" id="5_h1vuq"]
+[ext_resource type="Texture2D" uid="uid://begq8ggd0ypux" path="res://Assets/SequenceShapes/PurpleHexagon.png" id="6_py82c"]
+[ext_resource type="Texture2D" uid="uid://df8s8apkj73rd" path="res://Assets/SequenceShapes/Square.png" id="7_s3gmj"]
+[ext_resource type="Texture2D" uid="uid://2pmdcmxkkdl1" path="res://Assets/SequenceShapes/Circle.png" id="8_41pm8"]
+[ext_resource type="Texture2D" uid="uid://dw7fgxopnwg2i" path="res://Assets/SequenceShapes/Triangle.png" id="9_jn1in"]
+[ext_resource type="Texture2D" uid="uid://bg4t7wu3t0ni6" path="res://Assets/SequenceShapes/Rhombus.png" id="10_h52hk"]
+[ext_resource type="Texture2D" uid="uid://cexs0e7k0pdan" path="res://Assets/SequenceShapes/Pentagon.png" id="11_4x1rq"]
+[ext_resource type="Texture2D" uid="uid://djvt3nsat0n3b" path="res://Assets/SequenceShapes/Hexagon.png" id="12_sxi6l"]
+[ext_resource type="Texture2D" uid="uid://d1hfsrr18sigs" path="res://Assets/SequenceShapes/BlueTxt.png" id="13_ijfnw"]
+[ext_resource type="Texture2D" uid="uid://cpmqcxwvix1g5" path="res://Assets/SequenceShapes/RedTxt.png" id="14_v3dpb"]
+[ext_resource type="Texture2D" uid="uid://bux4ne3a7cae" path="res://Assets/SequenceShapes/YellowTxt.png" id="15_pyynh"]
+[ext_resource type="Texture2D" uid="uid://clw41puk7r1ky" path="res://Assets/SequenceShapes/GreenTxt.png" id="16_16yid"]
+[ext_resource type="Texture2D" uid="uid://c1vc2g8vlq5bu" path="res://Assets/SequenceShapes/OrangeTxt.png" id="17_6v7gy"]
+[ext_resource type="Texture2D" uid="uid://bbw6xymi72ir0" path="res://Assets/SequenceShapes/PurpleTxt.png" id="18_rqrkm"]
+[ext_resource type="Texture2D" uid="uid://dkgwqjskwmw13" path="res://Assets/SequenceShapes/SquareTxt.png" id="19_viejy"]
+[ext_resource type="Texture2D" uid="uid://buvgeia78x5h" path="res://Assets/SequenceShapes/CircleTxt.png" id="20_doru0"]
+[ext_resource type="Texture2D" uid="uid://21ckno60ctg6" path="res://Assets/SequenceShapes/TriangleTxt.png" id="21_r0huo"]
+[ext_resource type="Texture2D" uid="uid://djghak5luxhf3" path="res://Assets/SequenceShapes/RhombusTxt.png" id="22_54md6"]
+[ext_resource type="Texture2D" uid="uid://cg710b7b6mnxi" path="res://Assets/SequenceShapes/PentagonTxt.png" id="23_i15u2"]
+[ext_resource type="Texture2D" uid="uid://dbtwefd4ivm0k" path="res://Assets/SequenceShapes/HexagonTxt.png" id="24_oy4h5"]
+
+[node name="ShapeDisplay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_f37k3")
+
+[node name="Category1" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlueSquare" type="TextureRect" parent="Category1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xp77y")
+
+[node name="RedCircle" type="TextureRect" parent="Category1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xwkol")
+
+[node name="YellowTriangle" type="TextureRect" parent="Category1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_4tn0a")
+
+[node name="GreenRhombus" type="TextureRect" parent="Category1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_u2ga2")
+
+[node name="OrangePentagon" type="TextureRect" parent="Category1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_h1vuq")
+
+[node name="PurpleHexagon" type="TextureRect" parent="Category1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_py82c")
+
+[node name="Category2" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlueSquare" type="TextureRect" parent="Category2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_s3gmj")
+
+[node name="RedCircle" type="TextureRect" parent="Category2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_41pm8")
+
+[node name="YellowTriangle" type="TextureRect" parent="Category2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_jn1in")
+
+[node name="GreenRhombus" type="TextureRect" parent="Category2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_h52hk")
+
+[node name="OrangePentagon" type="TextureRect" parent="Category2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_4x1rq")
+
+[node name="PurpleHexagon" type="TextureRect" parent="Category2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_sxi6l")
+
+[node name="Category3" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlueSquare" type="TextureRect" parent="Category3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ijfnw")
+
+[node name="RedCircle" type="TextureRect" parent="Category3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_v3dpb")
+
+[node name="YellowTriangle" type="TextureRect" parent="Category3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_pyynh")
+
+[node name="GreenRhombus" type="TextureRect" parent="Category3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_16yid")
+
+[node name="OrangePentagon" type="TextureRect" parent="Category3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_6v7gy")
+
+[node name="PurpleHexagon" type="TextureRect" parent="Category3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_rqrkm")
+
+[node name="Category4" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlueSquare" type="TextureRect" parent="Category4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("19_viejy")
+
+[node name="RedCircle" type="TextureRect" parent="Category4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_doru0")
+
+[node name="YellowTriangle" type="TextureRect" parent="Category4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_r0huo")
+
+[node name="GreenRhombus" type="TextureRect" parent="Category4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("22_54md6")
+
+[node name="OrangePentagon" type="TextureRect" parent="Category4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_i15u2")
+
+[node name="PurpleHexagon" type="TextureRect" parent="Category4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = -102.0
+offset_right = 101.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_oy4h5")

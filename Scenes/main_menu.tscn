@@ -1,0 +1,428 @@
+[gd_scene load_steps=18 format=3 uid="uid://c31xhf7jt7lps"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d8v2r"]
+[ext_resource type="StyleBox" uid="uid://dkqcd1lc5jekt" path="res://Styles/ButtonStyles.tres" id="1_e0w7v"]
+[ext_resource type="StyleBox" uid="uid://cugfsv2g45ah4" path="res://Styles/ButtonHoverStyles.tres" id="2_rbohf"]
+[ext_resource type="Texture2D" uid="uid://bgqui6hbg881k" path="res://Assets/Backgrounds/Colorful_BG.jpg" id="2_ry6el"]
+[ext_resource type="StyleBox" uid="uid://bylfqbl3elsf3" path="res://Styles/ButtonPressedStyles.tres" id="3_mr8r2"]
+[ext_resource type="AudioStream" uid="uid://d10rys3stmga3" path="res://Assets/Sounds/MenuMusic.mp3" id="5_usfo7"]
+[ext_resource type="AudioStream" uid="uid://b2hnv5y5lny74" path="res://Assets/Sounds/ClickSound.mp3" id="6_6fulk"]
+
+[sub_resource type="SystemFont" id="SystemFont_g5qlm"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_e66s3"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_7mgni"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_dxt5e"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_l8y4e"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_gg1s2"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_r77y4"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_m4rgp"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_ncss1"]
+font_names = PackedStringArray("Cooper")
+
+[sub_resource type="SystemFont" id="SystemFont_fpwr6"]
+font_names = PackedStringArray("Cooper")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d8v2r")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ry6el")
+metadata/_edit_use_anchors_ = true
+
+[node name="MainMenuPanel" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -68.0
+offset_right = 54.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="MainMenuPanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("SystemFont_g5qlm")
+theme_override_font_sizes/font_size = 60
+text = "Shapemorize"
+horizontal_alignment = 1
+
+[node name="Separator" type="Control" parent="MainMenuPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator2" type="Control" parent="MainMenuPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator3" type="Control" parent="MainMenuPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PlayButton" type="Button" parent="MainMenuPanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_e66s3")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Play"
+
+[node name="GuideButton" type="Button" parent="MainMenuPanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_7mgni")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Guide"
+
+[node name="SettingsButton" type="Button" parent="MainMenuPanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_e66s3")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Settings"
+
+[node name="LeaderboardButton" type="Button" parent="MainMenuPanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_e66s3")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Highscore"
+
+[node name="ExitButton" type="Button" parent="MainMenuPanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_e66s3")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Exit"
+
+[node name="GuidePanel" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -171.0
+offset_top = -93.5
+offset_right = 171.0
+offset_bottom = 93.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="GuidePanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("SystemFont_g5qlm")
+theme_override_font_sizes/font_size = 60
+text = "Guide"
+horizontal_alignment = 1
+
+[node name="Separator" type="Control" parent="GuidePanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator2" type="Control" parent="GuidePanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="GuideText" type="Label" parent="GuidePanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("SystemFont_dxt5e")
+theme_override_font_sizes/font_size = 24
+text = "Memorize the sequence to advance levels.
+Wait for the sequence to play out.
+Wait for the timer to start ticking.
+Submit the same sequence to advance level."
+horizontal_alignment = 1
+
+[node name="Separator3" type="Control" parent="GuidePanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="BackButton" type="Button" parent="GuidePanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_l8y4e")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Back"
+
+[node name="SettingsPanel" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.5
+offset_top = -57.0
+offset_right = 54.5
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Title" type="Label" parent="SettingsPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("SystemFont_gg1s2")
+theme_override_font_sizes/font_size = 60
+text = "Settings"
+
+[node name="Separator3" type="Control" parent="SettingsPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Separator4" type="Control" parent="SettingsPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Separator2" type="Control" parent="SettingsPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Separator" type="Control" parent="SettingsPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="MusicVolumeLabel" type="Label" parent="SettingsPanel"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("SystemFont_r77y4")
+theme_override_font_sizes/font_size = 25
+text = "Music Volume"
+
+[node name="MusicVolumeSlider" type="HSlider" parent="SettingsPanel"]
+layout_mode = 2
+min_value = -40.0
+max_value = 22.0
+
+[node name="SFXVolumeLabel" type="Label" parent="SettingsPanel"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("SystemFont_r77y4")
+theme_override_font_sizes/font_size = 25
+text = "SFX Volume"
+
+[node name="SFXVolumeSlider" type="HSlider" parent="SettingsPanel"]
+layout_mode = 2
+min_value = -40.0
+max_value = 22.0
+
+[node name="MuteButton" type="Button" parent="SettingsPanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_e66s3")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Mute"
+
+[node name="BackButton" type="Button" parent="SettingsPanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_e66s3")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Back"
+
+[node name="LeaderboardPanel" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -138.0
+offset_right = 150.0
+offset_bottom = 138.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Title" type="Label" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("SystemFont_m4rgp")
+theme_override_font_sizes/font_size = 60
+text = "Leaderboard"
+
+[node name="Separator" type="Control" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator2" type="Control" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator3" type="Control" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator4" type="Control" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Highscore" type="Label" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("SystemFont_ncss1")
+theme_override_font_sizes/font_size = 32
+text = "Your Highscore is: Gay"
+
+[node name="Separator5" type="Control" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator6" type="Control" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator7" type="Control" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Separator8" type="Control" parent="LeaderboardPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="BackButton" type="Button" parent="LeaderboardPanel"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_fpwr6")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("1_e0w7v")
+theme_override_styles/hover = ExtResource("2_rbohf")
+theme_override_styles/pressed = ExtResource("3_mr8r2")
+text = "Back"
+
+[node name="MenuMusicPlayer" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(80, 70)
+stream = ExtResource("5_usfo7")
+volume_db = -5.0
+autoplay = true
+bus = &"Music"
+
+[node name="ClickSoundPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_6fulk")
+volume_db = -5.0
+bus = &"SFX"
+
+[connection signal="pressed" from="MainMenuPanel/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MainMenuPanel/GuideButton" to="." method="_on_guide_button_pressed"]
+[connection signal="pressed" from="MainMenuPanel/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="MainMenuPanel/LeaderboardButton" to="." method="_on_leaderboard_button_pressed"]
+[connection signal="pressed" from="MainMenuPanel/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="GuidePanel/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="value_changed" from="SettingsPanel/MusicVolumeSlider" to="." method="_on_music_volume_slider_value_changed"]
+[connection signal="value_changed" from="SettingsPanel/SFXVolumeSlider" to="." method="_on_sfx_volume_slider_value_changed"]
+[connection signal="pressed" from="SettingsPanel/MuteButton" to="." method="_on_mute_button_pressed"]
+[connection signal="pressed" from="SettingsPanel/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="LeaderboardPanel/BackButton" to="." method="_on_back_button_pressed"]
